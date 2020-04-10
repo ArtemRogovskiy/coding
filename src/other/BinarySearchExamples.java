@@ -13,5 +13,11 @@ public class BinarySearchExamples {
         int[] array_2 = {4, 10, 11};
         System.out.println(Arrays.binarySearch(array_2, 1));
         System.out.println(Arrays.binarySearch(array_2, 6));
+
+        System.out.println("-----------------With borders--------------------------");
+        int[] array3 = {5, 10, 15};
+
+        System.out.println(Arrays.binarySearch(array3, 3, 3, 16));
+        System.out.println(Arrays.binarySearch(array3, 0, 1, 5));
     }
 }
