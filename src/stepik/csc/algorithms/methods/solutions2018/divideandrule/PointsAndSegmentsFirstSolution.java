@@ -1,4 +1,4 @@
-package stepik.csc.algorithms.methods.solutions2018;
+package stepik.csc.algorithms.methods.solutions2018.divideandrule;
 
 import java.io.FileNotFoundException;
 import java.util.Random;
