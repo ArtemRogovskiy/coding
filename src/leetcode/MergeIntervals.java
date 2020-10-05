@@ -10,6 +10,7 @@ import java.util.List;
 public class MergeIntervals {
 
     public static void main(String[] args) {
+        double d = 0.0;
         int[][] res = new MergeIntervals().merge(new int[][]{{1, 3}, {2, 6}, {8, 10}, {15, 18}});
         int[][] res2 = new MergeIntervals().merge(new int[][]{{1, 4}, {4, 5}});
         int[][] res3 = new MergeIntervals().merge(new int[][]{{2, 3}, {4, 5}, {8, 9}, {1, 10}});
@@ -22,6 +23,7 @@ public class MergeIntervals {
 
     public int[][] merge(int[][] intervals) {
         if (intervals == null || intervals.length == 0) return new int[0][];
+//        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
         Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));
         List<List<Integer>> listRes = new ArrayList<>();
         int intervalStart = intervals[0][0];
